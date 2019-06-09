@@ -1,8 +1,8 @@
 Created by William Eng
 
-The contents of this folder are for Professor Robert Dimpsey's CSS 490 Cloud computing class,
-for Winter of 2019. It contains this README.txt file, WeatherApp.java, WeatherApp.class, main.java
-main.class, and the folder "com" which contains the GSON Library.
+The program works by running a while-loop that prompts the user for a valid city name. It will try to connect to the OWM API 4 times. If it unable to connect, an error message will be printed, and the program will be terminated. If the city is not recognizable by the OWM API, it will print an error and re-prompt the user for another city. Once the program receives a valid city, it will print out weather information for that city, which includes the description of weather conditions (clear, cloudy, rainy, etc.), temperature, humidity, and the times of sunset and sunrise.
+
+It utilizes the OpenWeatherMap (OWM) API to get weather information, and the GSON library to deserialize JSON strings/files.
 
 To build, first make sure that all files are in the same folder. Then, execute the following commands:
 --->javac WeatherApp.java
